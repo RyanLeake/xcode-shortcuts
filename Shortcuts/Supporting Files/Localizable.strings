@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Shortcuts
+
+  Created by Ryan Leake on 06/02/2022.
+  
+*/
+
+"shortcuts-title" = "Shortcuts";
+"shortcuts-search-prompt" = "Search for a shortcut";
+"picker-label" = "Category";
+"item-label" = "Filter";

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7834492427AFF4B400ECA39C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7834492327AFF4B400ECA39C /* Localizable.strings */; };
+		78AC2F5B27AEC64300CB50D4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5A27AEC64300CB50D4 /* Color+.swift */; };
+		78AC2F5D27AEC6D900CB50D4 /* Contstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */; };
+		78AC2F6227AEEE2300CB50D4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F6127AEEE2300CB50D4 /* Category.swift */; };
+		78D4C4D327AEAC18009EA17D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4D227AEAC18009EA17D /* Service.swift */; };
+		78D4C4D927AEB7DE009EA17D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4D827AEB7DE009EA17D /* ApiClient.swift */; };
+		78D4C4DB27AEB884009EA17D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4DA27AEB884009EA17D /* Endpoint.swift */; };
+		78D4C4DD27AEBC25009EA17D /* ShortcutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4DC27AEBC25009EA17D /* ShortcutRow.swift */; };
+		78D4C4DF27AEC100009EA17D /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4DE27AEC100009EA17D /* KeyView.swift */; };
 		78F5CA8D27AEA52900A1583A /* ShortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */; };
 		78F5CA8F27AEA52900A1583A /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */; };
 		78F5CA9127AEA52A00A1583A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F5CA9027AEA52A00A1583A /* Assets.xcassets */; };
@@ -14,6 +23,8 @@
 		78F5CA9E27AEA52A00A1583A /* ShortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA9D27AEA52A00A1583A /* ShortcutsTests.swift */; };
 		78F5CAA827AEA52A00A1583A /* ShortcutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CAA727AEA52A00A1583A /* ShortcutsUITests.swift */; };
 		78F5CAAA27AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */; };
+		78F5CABE27AEA96000A1583A /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABD27AEA96000A1583A /* Shortcut.swift */; };
+		78F5CAC027AEAA0F00A1583A /* ShortcutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7834492327AFF4B400ECA39C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		78AC2F5A27AEC64300CB50D4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contstants.swift; sourceTree = "<group>"; };
+		78AC2F6127AEEE2300CB50D4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		78D4C4D227AEAC18009EA17D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		78D4C4D827AEB7DE009EA17D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		78D4C4DA27AEB884009EA17D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		78D4C4DC27AEBC25009EA17D /* ShortcutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRow.swift; sourceTree = "<group>"; };
+		78D4C4DE27AEC100009EA17D /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		78F5CA8927AEA52900A1583A /* Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsApp.swift; sourceTree = "<group>"; };
 		78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
@@ -44,6 +64,8 @@
 		78F5CAA327AEA52A00A1583A /* ShortcutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5CAA727AEA52A00A1583A /* ShortcutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsUITests.swift; sourceTree = "<group>"; };
 		78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78F5CABD27AEA96000A1583A /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
+		78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +116,10 @@
 		78F5CA8B27AEA52900A1583A /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
-				78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */,
-				78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */,
-				78F5CA9027AEA52A00A1583A /* Assets.xcassets */,
+				78F5CAB727AEA90E00A1583A /* App */,
+				78F5CAB827AEA91C00A1583A /* Network */,
+				78F5CAB927AEA92800A1583A /* Features */,
+				78F5CAC127AEAB0C00A1583A /* Supporting Files */,
 				78F5CA9227AEA52A00A1583A /* Preview Content */,
 			);
 			path = Shortcuts;
@@ -125,6 +148,72 @@
 				78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */,
 			);
 			path = ShortcutsUITests;
+			sourceTree = "<group>";
+		};
+		78F5CAB727AEA90E00A1583A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		78F5CAB827AEA91C00A1583A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78D4C4D227AEAC18009EA17D /* Service.swift */,
+				78D4C4D827AEB7DE009EA17D /* ApiClient.swift */,
+				78D4C4DA27AEB884009EA17D /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		78F5CAB927AEA92800A1583A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CABC27AEA93B00A1583A /* Models */,
+				78F5CABB27AEA93600A1583A /* ViewModels */,
+				78F5CABA27AEA93100A1583A /* Views */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		78F5CABA27AEA93100A1583A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */,
+				78D4C4DC27AEBC25009EA17D /* ShortcutRow.swift */,
+				78D4C4DE27AEC100009EA17D /* KeyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78F5CABB27AEA93600A1583A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		78F5CABC27AEA93B00A1583A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CABD27AEA96000A1583A /* Shortcut.swift */,
+				78AC2F6127AEEE2300CB50D4 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78F5CAC127AEAB0C00A1583A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78F5CA9027AEA52A00A1583A /* Assets.xcassets */,
+				78AC2F5A27AEC64300CB50D4 /* Color+.swift */,
+				78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */,
+				7834492327AFF4B400ECA39C /* Localizable.strings */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F5CA9427AEA52A00A1583A /* Preview Assets.xcassets in Resources */,
+				7834492427AFF4B400ECA39C /* Localizable.strings in Resources */,
 				78F5CA9127AEA52A00A1583A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D4C4D927AEB7DE009EA17D /* ApiClient.swift in Sources */,
+				78AC2F5B27AEC64300CB50D4 /* Color+.swift in Sources */,
 				78F5CA8F27AEA52900A1583A /* ShortcutsView.swift in Sources */,
+				78D4C4DB27AEB884009EA17D /* Endpoint.swift in Sources */,
 				78F5CA8D27AEA52900A1583A /* ShortcutsApp.swift in Sources */,
+				78D4C4DD27AEBC25009EA17D /* ShortcutRow.swift in Sources */,
+				78D4C4DF27AEC100009EA17D /* KeyView.swift in Sources */,
+				78F5CAC027AEAA0F00A1583A /* ShortcutsViewModel.swift in Sources */,
+				78F5CABE27AEA96000A1583A /* Shortcut.swift in Sources */,
+				78AC2F5D27AEC6D900CB50D4 /* Contstants.swift in Sources */,
+				78D4C4D327AEAC18009EA17D /* Service.swift in Sources */,
+				78AC2F6227AEEE2300CB50D4 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +554,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -483,7 +583,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
