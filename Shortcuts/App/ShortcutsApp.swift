@@ -11,7 +11,7 @@ import SwiftUI
 struct ShortcutsApp: App {
     var body: some Scene {
         WindowGroup {
-            ShortcutsView(viewModel: ShortcutsViewModel())
+            ShortcutsView(viewModel: ViewModel())
         }
     }
 }

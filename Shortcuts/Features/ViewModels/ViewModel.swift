@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 
 @MainActor
-final class ShortcutsViewModel: ObservableObject {
+final class ViewModel: ObservableObject {
 
     // MARK: - Properties
 
@@ -64,7 +64,7 @@ final class ShortcutsViewModel: ObservableObject {
 
 // MARK: - Inputs
 
-extension ShortcutsViewModel {
+extension ViewModel {
     func getShortcuts() {
         Task {
             do {

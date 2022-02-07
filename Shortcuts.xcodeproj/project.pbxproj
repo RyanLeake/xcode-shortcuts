@@ -10,11 +10,8 @@
 		7827D06927B143FD002961CE /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827D06827B143FD002961CE /* ShortcutsView.swift */; };
 		7827D06B27B143FE002961CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7827D06A27B143FE002961CE /* Assets.xcassets */; };
 		7827D06E27B143FE002961CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7827D06D27B143FE002961CE /* Preview Assets.xcassets */; };
-		7827D07927B143FF002961CE /* ShortcutsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827D07827B143FF002961CE /* ShortcutsMacTests.swift */; };
-		7827D08327B143FF002961CE /* ShortcutsMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827D08227B143FF002961CE /* ShortcutsMacUITests.swift */; };
-		7827D08527B143FF002961CE /* ShortcutsMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827D08427B143FF002961CE /* ShortcutsMacUITestsLaunchTests.swift */; };
 		7827D08F27B144AC002961CE /* ShortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */; };
-		7827D09027B144AC002961CE /* ShortcutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */; };
+		7827D09027B144AC002961CE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABF27AEAA0F00A1583A /* ViewModel.swift */; };
 		7827D09127B144AC002961CE /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5A27AEC64300CB50D4 /* Color+.swift */; };
 		7827D09227B144AC002961CE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4DA27AEB884009EA17D /* Endpoint.swift */; };
 		7827D09327B144AC002961CE /* ShortcutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4DC27AEBC25009EA17D /* ShortcutRow.swift */; };
@@ -27,6 +24,13 @@
 		7827D09A27B144AC002961CE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C4D827AEB7DE009EA17D /* ApiClient.swift */; };
 		7827D09C27B144AC002961CE /* Contstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */; };
 		7834492427AFF4B400ECA39C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7834492327AFF4B400ECA39C /* Localizable.strings */; };
+		7867D82D27B15B95000420C9 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D82C27B15B95000420C9 /* EndpointTests.swift */; };
+		7867D83027B15C3F000420C9 /* shortcuts_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 7867D82F27B15C3F000420C9 /* shortcuts_response.json */; };
+		7867D83527B15C84000420C9 /* XCTestCase+loadStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D83427B15C84000420C9 /* XCTestCase+loadStub.swift */; };
+		7867D83827B15CB8000420C9 /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D83727B15CB8000420C9 /* MockApiClient.swift */; };
+		7867D83A27B15D62000420C9 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D83927B15D62000420C9 /* ServiceTests.swift */; };
+		7867D83C27B160BF000420C9 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D83B27B160BF000420C9 /* ViewModelTests.swift */; };
+		7867D83E27B16CC1000420C9 /* ShortcutsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867D83D27B16CC1000420C9 /* ShortcutsViewTests.swift */; };
 		78AC2F5B27AEC64300CB50D4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5A27AEC64300CB50D4 /* Color+.swift */; };
 		78AC2F5D27AEC6D900CB50D4 /* Contstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */; };
 		78AC2F6227AEEE2300CB50D4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC2F6127AEEE2300CB50D4 /* Category.swift */; };
@@ -39,28 +43,11 @@
 		78F5CA8F27AEA52900A1583A /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */; };
 		78F5CA9127AEA52A00A1583A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F5CA9027AEA52A00A1583A /* Assets.xcassets */; };
 		78F5CA9427AEA52A00A1583A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F5CA9327AEA52A00A1583A /* Preview Assets.xcassets */; };
-		78F5CA9E27AEA52A00A1583A /* ShortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CA9D27AEA52A00A1583A /* ShortcutsTests.swift */; };
-		78F5CAA827AEA52A00A1583A /* ShortcutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CAA727AEA52A00A1583A /* ShortcutsUITests.swift */; };
-		78F5CAAA27AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */; };
 		78F5CABE27AEA96000A1583A /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABD27AEA96000A1583A /* Shortcut.swift */; };
-		78F5CAC027AEAA0F00A1583A /* ShortcutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */; };
+		78F5CAC027AEAA0F00A1583A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5CABF27AEAA0F00A1583A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7827D07527B143FF002961CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78F5CA8127AEA52900A1583A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7827D06327B143FD002961CE;
-			remoteInfo = ShortcutsMac;
-		};
-		7827D07F27B143FF002961CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78F5CA8127AEA52900A1583A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7827D06327B143FD002961CE;
-			remoteInfo = ShortcutsMac;
-		};
 		78F5CA9A27AEA52A00A1583A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78F5CA8127AEA52900A1583A /* Project object */;
@@ -83,12 +70,14 @@
 		7827D06A27B143FE002961CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7827D06D27B143FE002961CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7827D06F27B143FE002961CE /* ShortcutsMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShortcutsMac.entitlements; sourceTree = "<group>"; };
-		7827D07427B143FF002961CE /* ShortcutsMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutsMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7827D07827B143FF002961CE /* ShortcutsMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsMacTests.swift; sourceTree = "<group>"; };
-		7827D07E27B143FF002961CE /* ShortcutsMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutsMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7827D08227B143FF002961CE /* ShortcutsMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsMacUITests.swift; sourceTree = "<group>"; };
-		7827D08427B143FF002961CE /* ShortcutsMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7834492327AFF4B400ECA39C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7867D82C27B15B95000420C9 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		7867D82F27B15C3F000420C9 /* shortcuts_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shortcuts_response.json; sourceTree = "<group>"; };
+		7867D83427B15C84000420C9 /* XCTestCase+loadStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+loadStub.swift"; sourceTree = "<group>"; };
+		7867D83727B15CB8000420C9 /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		7867D83927B15D62000420C9 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		7867D83B27B160BF000420C9 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		7867D83D27B16CC1000420C9 /* ShortcutsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsViewTests.swift; sourceTree = "<group>"; };
 		78AC2F5A27AEC64300CB50D4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		78AC2F5C27AEC6D900CB50D4 /* Contstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contstants.swift; sourceTree = "<group>"; };
 		78AC2F6127AEEE2300CB50D4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -103,30 +92,13 @@
 		78F5CA9027AEA52A00A1583A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F5CA9327AEA52A00A1583A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78F5CA9927AEA52A00A1583A /* ShortcutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78F5CA9D27AEA52A00A1583A /* ShortcutsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsTests.swift; sourceTree = "<group>"; };
 		78F5CAA327AEA52A00A1583A /* ShortcutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78F5CAA727AEA52A00A1583A /* ShortcutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsUITests.swift; sourceTree = "<group>"; };
-		78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78F5CABD27AEA96000A1583A /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
-		78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsViewModel.swift; sourceTree = "<group>"; };
+		78F5CABF27AEAA0F00A1583A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7827D06127B143FD002961CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07127B143FF002961CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07B27B143FF002961CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,21 +148,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7827D07727B143FF002961CE /* ShortcutsMacTests */ = {
+		7867D82E27B15C1A000420C9 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				7827D07827B143FF002961CE /* ShortcutsMacTests.swift */,
+				7867D82F27B15C3F000420C9 /* shortcuts_response.json */,
 			);
-			path = ShortcutsMacTests;
+			path = Stubs;
 			sourceTree = "<group>";
 		};
-		7827D08127B143FF002961CE /* ShortcutsMacUITests */ = {
+		7867D83327B15C6E000420C9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7827D08227B143FF002961CE /* ShortcutsMacUITests.swift */,
-				7827D08427B143FF002961CE /* ShortcutsMacUITestsLaunchTests.swift */,
+				7867D83427B15C84000420C9 /* XCTestCase+loadStub.swift */,
 			);
-			path = ShortcutsMacUITests;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7867D83627B15C9F000420C9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7867D83727B15CB8000420C9 /* MockApiClient.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		78F5CA8027AEA52900A1583A = {
@@ -200,8 +179,6 @@
 				78F5CA9C27AEA52A00A1583A /* ShortcutsTests */,
 				78F5CAA627AEA52A00A1583A /* ShortcutsUITests */,
 				7827D06527B143FD002961CE /* ShortcutsMac */,
-				7827D07727B143FF002961CE /* ShortcutsMacTests */,
-				7827D08127B143FF002961CE /* ShortcutsMacUITests */,
 				78F5CA8A27AEA52900A1583A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,8 +190,6 @@
 				78F5CA9927AEA52A00A1583A /* ShortcutsTests.xctest */,
 				78F5CAA327AEA52A00A1583A /* ShortcutsUITests.xctest */,
 				7827D06427B143FD002961CE /* ShortcutsMac.app */,
-				7827D07427B143FF002961CE /* ShortcutsMacTests.xctest */,
-				7827D07E27B143FF002961CE /* ShortcutsMacUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,7 +217,12 @@
 		78F5CA9C27AEA52A00A1583A /* ShortcutsTests */ = {
 			isa = PBXGroup;
 			children = (
-				78F5CA9D27AEA52A00A1583A /* ShortcutsTests.swift */,
+				7867D83B27B160BF000420C9 /* ViewModelTests.swift */,
+				7867D83927B15D62000420C9 /* ServiceTests.swift */,
+				7867D82C27B15B95000420C9 /* EndpointTests.swift */,
+				7867D83627B15C9F000420C9 /* Mocks */,
+				7867D83327B15C6E000420C9 /* Extensions */,
+				7867D82E27B15C1A000420C9 /* Stubs */,
 			);
 			path = ShortcutsTests;
 			sourceTree = "<group>";
@@ -250,8 +230,7 @@
 		78F5CAA627AEA52A00A1583A /* ShortcutsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				78F5CAA727AEA52A00A1583A /* ShortcutsUITests.swift */,
-				78F5CAA927AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift */,
+				7867D83D27B16CC1000420C9 /* ShortcutsViewTests.swift */,
 			);
 			path = ShortcutsUITests;
 			sourceTree = "<group>";
@@ -297,7 +276,7 @@
 		78F5CABB27AEA93600A1583A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				78F5CABF27AEAA0F00A1583A /* ShortcutsViewModel.swift */,
+				78F5CABF27AEAA0F00A1583A /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -341,42 +320,6 @@
 			productName = ShortcutsMac;
 			productReference = 7827D06427B143FD002961CE /* ShortcutsMac.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7827D07327B143FF002961CE /* ShortcutsMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7827D08D27B143FF002961CE /* Build configuration list for PBXNativeTarget "ShortcutsMacTests" */;
-			buildPhases = (
-				7827D07027B143FF002961CE /* Sources */,
-				7827D07127B143FF002961CE /* Frameworks */,
-				7827D07227B143FF002961CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7827D07627B143FF002961CE /* PBXTargetDependency */,
-			);
-			name = ShortcutsMacTests;
-			productName = ShortcutsMacTests;
-			productReference = 7827D07427B143FF002961CE /* ShortcutsMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7827D07D27B143FF002961CE /* ShortcutsMacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7827D08E27B143FF002961CE /* Build configuration list for PBXNativeTarget "ShortcutsMacUITests" */;
-			buildPhases = (
-				7827D07A27B143FF002961CE /* Sources */,
-				7827D07B27B143FF002961CE /* Frameworks */,
-				7827D07C27B143FF002961CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7827D08027B143FF002961CE /* PBXTargetDependency */,
-			);
-			name = ShortcutsMacUITests;
-			productName = ShortcutsMacUITests;
-			productReference = 7827D07E27B143FF002961CE /* ShortcutsMacUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		78F5CA8827AEA52900A1583A /* Shortcuts */ = {
 			isa = PBXNativeTarget;
@@ -445,23 +388,17 @@
 					7827D06327B143FD002961CE = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					7827D07327B143FF002961CE = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 7827D06327B143FD002961CE;
-					};
-					7827D07D27B143FF002961CE = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 7827D06327B143FD002961CE;
-					};
 					78F5CA8827AEA52900A1583A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					78F5CA9827AEA52A00A1583A = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 78F5CA8827AEA52900A1583A;
 					};
 					78F5CAA227AEA52A00A1583A = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 78F5CA8827AEA52900A1583A;
 					};
 				};
@@ -483,8 +420,6 @@
 				78F5CA9827AEA52A00A1583A /* ShortcutsTests */,
 				78F5CAA227AEA52A00A1583A /* ShortcutsUITests */,
 				7827D06327B143FD002961CE /* ShortcutsMac */,
-				7827D07327B143FF002961CE /* ShortcutsMacTests */,
-				7827D07D27B143FF002961CE /* ShortcutsMacUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -498,20 +433,6 @@
 				7827D09827B144AC002961CE /* Localizable.strings in Resources */,
 				7827D09727B144AC002961CE /* Assets.xcassets in Resources */,
 				7827D06B27B143FE002961CE /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07227B143FF002961CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07C27B143FF002961CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7867D83027B15C3F000420C9 /* shortcuts_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,30 +494,13 @@
 				7827D09427B144AC002961CE /* Service.swift in Sources */,
 				7827D06927B143FD002961CE /* ShortcutsView.swift in Sources */,
 				7827D09127B144AC002961CE /* Color+.swift in Sources */,
-				7827D09027B144AC002961CE /* ShortcutsViewModel.swift in Sources */,
+				7827D09027B144AC002961CE /* ViewModel.swift in Sources */,
 				7827D09627B144AC002961CE /* KeyView.swift in Sources */,
 				7827D08F27B144AC002961CE /* ShortcutsApp.swift in Sources */,
 				7827D09227B144AC002961CE /* Endpoint.swift in Sources */,
 				7827D09C27B144AC002961CE /* Contstants.swift in Sources */,
 				7827D09527B144AC002961CE /* Category.swift in Sources */,
 				7827D09927B144AC002961CE /* Shortcut.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07027B143FF002961CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7827D07927B143FF002961CE /* ShortcutsMacTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7827D07A27B143FF002961CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7827D08527B143FF002961CE /* ShortcutsMacUITestsLaunchTests.swift in Sources */,
-				7827D08327B143FF002961CE /* ShortcutsMacUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +515,7 @@
 				78F5CA8D27AEA52900A1583A /* ShortcutsApp.swift in Sources */,
 				78D4C4DD27AEBC25009EA17D /* ShortcutRow.swift in Sources */,
 				78D4C4DF27AEC100009EA17D /* KeyView.swift in Sources */,
-				78F5CAC027AEAA0F00A1583A /* ShortcutsViewModel.swift in Sources */,
+				78F5CAC027AEAA0F00A1583A /* ViewModel.swift in Sources */,
 				78F5CABE27AEA96000A1583A /* Shortcut.swift in Sources */,
 				78AC2F5D27AEC6D900CB50D4 /* Contstants.swift in Sources */,
 				78D4C4D327AEAC18009EA17D /* Service.swift in Sources */,
@@ -622,7 +527,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F5CA9E27AEA52A00A1583A /* ShortcutsTests.swift in Sources */,
+				7867D83C27B160BF000420C9 /* ViewModelTests.swift in Sources */,
+				7867D83827B15CB8000420C9 /* MockApiClient.swift in Sources */,
+				7867D83A27B15D62000420C9 /* ServiceTests.swift in Sources */,
+				7867D83527B15C84000420C9 /* XCTestCase+loadStub.swift in Sources */,
+				7867D82D27B15B95000420C9 /* EndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,24 +539,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F5CAAA27AEA52A00A1583A /* ShortcutsUITestsLaunchTests.swift in Sources */,
-				78F5CAA827AEA52A00A1583A /* ShortcutsUITests.swift in Sources */,
+				7867D83E27B16CC1000420C9 /* ShortcutsViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7827D07627B143FF002961CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7827D06327B143FD002961CE /* ShortcutsMac */;
-			targetProxy = 7827D07527B143FF002961CE /* PBXContainerItemProxy */;
-		};
-		7827D08027B143FF002961CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7827D06327B143FD002961CE /* ShortcutsMac */;
-			targetProxy = 7827D07F27B143FF002961CE /* PBXContainerItemProxy */;
-		};
 		78F5CA9B27AEA52A00A1583A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 78F5CA8827AEA52900A1583A /* Shortcuts */;
@@ -716,84 +614,6 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		7827D08827B143FF002961CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShortcutsMac.app/Contents/MacOS/ShortcutsMac";
-			};
-			name = Debug;
-		};
-		7827D08927B143FF002961CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShortcutsMac.app/Contents/MacOS/ShortcutsMac";
-			};
-			name = Release;
-		};
-		7827D08A27B143FF002961CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ShortcutsMac;
-			};
-			name = Debug;
-		};
-		7827D08B27B143FF002961CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ShortcutsMac;
 			};
 			name = Release;
 		};
@@ -980,15 +800,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shortcuts.app/Shortcuts";
@@ -1000,11 +827,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1019,14 +852,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Shortcuts;
@@ -1037,10 +877,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.ShortcutsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1059,24 +905,6 @@
 			buildConfigurations = (
 				7827D08627B143FF002961CE /* Debug */,
 				7827D08727B143FF002961CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7827D08D27B143FF002961CE /* Build configuration list for PBXNativeTarget "ShortcutsMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7827D08827B143FF002961CE /* Debug */,
-				7827D08927B143FF002961CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7827D08E27B143FF002961CE /* Build configuration list for PBXNativeTarget "ShortcutsMacUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7827D08A27B143FF002961CE /* Debug */,
-				7827D08B27B143FF002961CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

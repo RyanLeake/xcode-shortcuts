@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Shortcut: Codable, Identifiable {
+struct Shortcut: Codable, Identifiable, Equatable {
     let id: String
     let description: String
     let category: String
@@ -25,7 +25,7 @@ extension Shortcut {
 
 extension Shortcut {
     static let example = Shortcut(id: "1",
-                                  description: "Global search",
+                                  description: "Jump to another editor",
                                   category: "Navigation",
-                                  keys: ["⌘", "⇧", "F"])
+                                  keys: ["⌘", "J"])
 }

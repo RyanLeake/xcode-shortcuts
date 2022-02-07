@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ShortcutsView: View {
-    @ObservedObject private var viewModel: ShortcutsViewModel
+    @ObservedObject private var viewModel: ViewModel
 
-    init(viewModel: ShortcutsViewModel) {
+    init(viewModel: ViewModel) {
         self.viewModel = viewModel
     }
 
@@ -50,6 +50,7 @@ struct ShortcutsView: View {
                     }
                 }
             }
+            .accessibilityIdentifier("shortcutList")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -57,6 +58,6 @@ struct ShortcutsView: View {
 
 struct ShortcutsView_Previews: PreviewProvider {
     static var previews: some View {
-        ShortcutsView(viewModel: ShortcutsViewModel())
+        ShortcutsView(viewModel: ViewModel())
     }
 }
