@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Shortcuts
+//  ShortcutsMac
 //
-//  Created by Ryan Leake on 05/02/2022.
+//  Created by Ryan Leake on 07/02/2022.
 //
 
 import SwiftUI
@@ -15,7 +15,6 @@ struct ShortcutsView: View {
     }
 
     var body: some View {
-        NavigationView {
             List($viewModel.filteredShortcuts) { $shortcut in
                 ShortcutRow(shortcut: $shortcut)
                     .contextMenu {
@@ -50,12 +49,11 @@ struct ShortcutsView: View {
                     }
                 }
             }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+            .frame(minWidth: 450, idealWidth: 500, minHeight: 600, idealHeight: 700)
     }
 }
 
-struct ShortcutsView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ShortcutsView(viewModel: ShortcutsViewModel())
     }

@@ -22,3 +22,9 @@ struct ShortcutRow: View {
         .padding()
     }
 }
+
+struct ShortcutsRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ShortcutRow(shortcut: .constant(Shortcut.example))
+    }
+}

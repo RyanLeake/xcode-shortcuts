@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol ServiceProtocol {
-    func getShortcuts() -> AnyPublisher<[Shortcut], Error>
+    func getShortcuts() async throws -> [Shortcut]
 }
 
 struct Service: ServiceProtocol {
@@ -20,7 +20,7 @@ struct Service: ServiceProtocol {
         self.apiClient = apiClient
     }
 
-    func getShortcuts() -> AnyPublisher<[Shortcut], Error> {
-        apiClient.request(.shortcuts, JSONDecoder())
+    func getShortcuts() async throws -> [Shortcut] {
+        try await apiClient.request(.shortcuts)
     }
 }

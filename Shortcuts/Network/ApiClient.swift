@@ -9,21 +9,16 @@ import Combine
 import Foundation
 
 protocol Requestable {
-    func request<R: Decodable>(_ endpoint: Endpoint<R>, _ decoder: JSONDecoder) -> AnyPublisher<R, Error>
+    func request<R: Decodable>(_ endpoint: Endpoint<R>) async throws -> R
 }
 
 struct ApiClient: Requestable {
-    func request<R: Decodable>(_ endpoint: Endpoint<R>, _ decoder: JSONDecoder) -> AnyPublisher<R, Error> {
-
-        guard let request = endpoint.makeRequest() else {
-            return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+    func request<R: Decodable>(_ endpoint: Endpoint<R>) async throws -> R {
+        guard let request = endpoint.makeRequest(), let url = request.url else {
+            throw URLError(.badURL)
         }
 
-        return URLSession.shared
-            .dataTaskPublisher(for: request)
-            .map(\.data)
-            .decode(type: R.self, decoder: decoder)
-            .receive(on: DispatchQueue.main)
-            .eraseToAnyPublisher()
+        let (data, _) = try await URLSession.shared.data(from: url)
+        return try JSONDecoder().decode(R.self, from: data)
     }
 }

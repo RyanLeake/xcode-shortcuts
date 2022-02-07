@@ -9,6 +9,7 @@ import OSLog
 import Combine
 import SwiftUI
 
+@MainActor
 final class ShortcutsViewModel: ObservableObject {
 
     // MARK: - Properties
@@ -16,8 +17,12 @@ final class ShortcutsViewModel: ObservableObject {
     private let service: ServiceProtocol
     private let logger = Logger()
     private var cancellables = Set<AnyCancellable>()
-    private var shortcuts: [Shortcut] = []
-    
+    private var shortcuts: [Shortcut] = [] {
+        didSet {
+            filteredShortcuts = shortcuts
+        }
+    }
+
     @Published var showFocusedOnly = false {
         didSet {
             filter(nil)
@@ -61,20 +66,14 @@ final class ShortcutsViewModel: ObservableObject {
 
 extension ShortcutsViewModel {
     func getShortcuts() {
-        service
-            .getShortcuts()
-            .sink(receiveCompletion: { [weak self] completion in
-                switch completion {
-                case .failure:
-                    self?.logger.critical("Failed to retrieve shortcuts")
-                case .finished:
-                    self?.logger.info("Finished fetching shortcuts")
-                }
-            }, receiveValue: { [weak self] shortcuts in
-                self?.shortcuts = shortcuts
-                self?.filteredShortcuts = shortcuts
-            })
-            .store(in: &cancellables)
+        Task {
+            do {
+                self.shortcuts = try await service
+                    .getShortcuts()
+            } catch let error {
+                logger.error("Failed to retrieve shortcuts: \(error.localizedDescription, privacy: .auto)")
+            }
+        }
     }
 
     func toggleFocus(for shortcut: Shortcut) {
