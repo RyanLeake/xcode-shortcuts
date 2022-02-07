@@ -76,7 +76,7 @@ extension ShortcutsViewModel {
             })
             .store(in: &cancellables)
     }
-    
+
     func toggleFocus(for shortcut: Shortcut) {
         shortcut.toggleFocus()
         filteredShortcuts = filteredShortcuts

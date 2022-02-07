@@ -10,3 +10,5 @@
 "shortcuts-search-prompt" = "Search for a shortcut";
 "picker-label" = "Category";
 "item-label" = "Filter";
+"toggle-focus" = "Toggle focus";
+"focused-only" = "Focused only";

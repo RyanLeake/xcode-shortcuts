@@ -19,7 +19,7 @@ struct ShortcutsView: View {
             List($viewModel.filteredShortcuts) { $shortcut in
                 ShortcutRow(shortcut: $shortcut)
                     .contextMenu {
-                        Button("Toggle focus") {
+                        Button("toggle-focus") {
                             withAnimation {
                                 viewModel.toggleFocus(for: shortcut)
                             }
@@ -43,7 +43,7 @@ struct ShortcutsView: View {
                         .pickerStyle(.inline)
                         
                         Toggle(isOn: $viewModel.showFocusedOnly) {
-                            Label("Focused only", systemImage: "star.fill")
+                            Label("focused-only", systemImage: "target")
                         }
                     } label: {
                         Label("item-label", systemImage: "slider.horizontal.3")
@@ -51,6 +51,7 @@ struct ShortcutsView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
