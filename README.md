@@ -13,7 +13,12 @@
 
 <p align="center">Supercharge your Xcode development by learning shortcuts.</p>
 
-<br>
+<a href="https://apps.apple.com/gb/app/xshortcuts/id1608921211">
+<p align="center">
+  <img src="http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg" width="135" alt="Available on the App Store">
+</p>
+</a>
+
 <br>
 
 <p align="center">
@@ -34,7 +39,3 @@ XShortcuts is a simple developer tool to help you master Xcode shortcuts.
 
 ## License
 XShortcuts is available under the Apache License 2.0 license. See the LICENSE.md file for more info.
-
-## Links
-- [Swifted](https://swifted.io/)
-- [App Store](https://apps.apple.com/gb/app/xshortcuts/id1608921211)
