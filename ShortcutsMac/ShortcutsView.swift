@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ShortcutsView: View {
-    @ObservedObject private var viewModel: ShortcutsViewModel
+    @ObservedObject private var viewModel: ViewModel
 
-    init(viewModel: ShortcutsViewModel) {
+    init(viewModel: ViewModel) {
         self.viewModel = viewModel
     }
 
@@ -55,6 +55,6 @@ struct ShortcutsView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ShortcutsView(viewModel: ShortcutsViewModel())
+        ShortcutsView(viewModel: ViewModel())
     }
 }

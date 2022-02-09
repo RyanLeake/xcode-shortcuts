@@ -86,7 +86,7 @@
 		78D4C4DA27AEB884009EA17D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		78D4C4DC27AEBC25009EA17D /* ShortcutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRow.swift; sourceTree = "<group>"; };
 		78D4C4DE27AEC100009EA17D /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
-		78F5CA8927AEA52900A1583A /* Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F5CA8927AEA52900A1583A /* XShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5CA8C27AEA52900A1583A /* ShortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsApp.swift; sourceTree = "<group>"; };
 		78F5CA8E27AEA52900A1583A /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
 		78F5CA9027AEA52A00A1583A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		78F5CA8A27AEA52900A1583A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				78F5CA8927AEA52900A1583A /* Shortcuts.app */,
+				78F5CA8927AEA52900A1583A /* XShortcuts.app */,
 				78F5CA9927AEA52A00A1583A /* ShortcutsTests.xctest */,
 				78F5CAA327AEA52A00A1583A /* ShortcutsUITests.xctest */,
 				7827D06427B143FD002961CE /* ShortcutsMac.app */,
@@ -336,7 +336,7 @@
 			);
 			name = Shortcuts;
 			productName = Shortcuts;
-			productReference = 78F5CA8927AEA52900A1583A /* Shortcuts.app */;
+			productReference = 78F5CA8927AEA52900A1583A /* XShortcuts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		78F5CA9827AEA52A00A1583A /* ShortcutsTests */ = {
@@ -573,6 +573,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,7 +581,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.shortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,6 +603,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,7 +611,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.shortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -739,7 +741,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Shortcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				ENABLE_PREVIEWS = YES;
@@ -756,8 +758,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.shortcuts;
+				PRODUCT_NAME = XShortcuts;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -770,7 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Shortcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = KZ9ZQNJ77C;
 				ENABLE_PREVIEWS = YES;
@@ -787,8 +789,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.Shortcut;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swifted.shortcuts;
+				PRODUCT_NAME = XShortcuts;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

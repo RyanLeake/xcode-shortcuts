@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "78F5CA8827AEA52900A1583A"
-               BuildableName = "Shortcuts.app"
+               BuildableName = "XShortcuts.app"
                BlueprintName = "Shortcuts"
                ReferencedContainer = "container:Shortcuts.xcodeproj">
             </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78F5CA8827AEA52900A1583A"
-            BuildableName = "Shortcuts.app"
+            BuildableName = "XShortcuts.app"
             BlueprintName = "Shortcuts"
             ReferencedContainer = "container:Shortcuts.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78F5CA8827AEA52900A1583A"
-            BuildableName = "Shortcuts.app"
+            BuildableName = "XShortcuts.app"
             BlueprintName = "Shortcuts"
             ReferencedContainer = "container:Shortcuts.xcodeproj">
          </BuildableReference>

@@ -70,6 +70,7 @@ extension ViewModel {
             do {
                 self.shortcuts = try await service
                     .getShortcuts()
+                    .sorted { $0.description < $1.description }
             } catch let error {
                 logger.error("Failed to retrieve shortcuts: \(error.localizedDescription, privacy: .auto)")
             }
