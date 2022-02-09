@@ -1,5 +1,3 @@
-# xcode-shortcuts
-
 <h1 align="center">
   <img src="Images/icon.png" width="136" alt="icon"><br>
   XShortcuts<br>
@@ -8,7 +6,7 @@
       <img src="https://img.shields.io/badge/contact-ryan@swifted.io-blue.svg?style=flat" alt="Contact">
     </a>
     <a href="LICENSE.md">
-      <img src="https://img.shields.io/badge/license-Apache 2.0-red.svg?style=flat" alt="License: Apache 2.0">
+      <img src="https://img.shields.io/badge/license-Apache License 2.0-red.svg?style=flat" alt="License: Apache License 2.0">
     </a>
   </p>
 </h1>
