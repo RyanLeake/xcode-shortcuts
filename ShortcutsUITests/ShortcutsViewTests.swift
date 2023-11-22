@@ -13,7 +13,7 @@ import XCTest
  This class initializes an instance of `XCUIApplication` and provides a suite of tests to verify the UI's initial state and search functionality within the app.
 
  - Properties:
- - app: An instance of `XCUIApplication` representing the application under test.
+    - app: An instance of `XCUIApplication` representing the application under test.
  */
 
 final class UITests: XCTestCase {

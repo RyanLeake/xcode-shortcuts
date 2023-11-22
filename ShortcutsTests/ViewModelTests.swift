@@ -13,8 +13,8 @@ import XCTest
  `ViewModelTests` is a subclass of XCTestCase, designed to perform automated tests on the `ViewModel` class.
  
  - Parameters:
- - sut: An optional instance of `ViewModel`, standing for 'System Under Test'.
- - cancellables: A set of AnyCancellable, used to manage memory for Combine subscriptions.
+    - sut: An optional instance of `ViewModel`, standing for 'System Under Test'.
+    - cancellables: A set of AnyCancellable, used to manage memory for Combine subscriptions.
  */
 
 final class ViewModelTests: XCTestCase {
