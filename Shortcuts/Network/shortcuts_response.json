@@ -1,0 +1,206 @@
+[
+    {
+        "id": "1",
+        "description": "Open Preferences",
+        "category": "General",
+        "keys": ["⌘", ","]
+    },
+    {
+        "id": "2",
+        "description": "Find in Workspace",
+        "category": "General",
+        "keys": ["⇧", "⌘", "F"]
+    },
+    {
+        "id": "3",
+        "description": "Show or hide Navigator",
+        "category": "Views",
+        "keys": ["⌘", "0"]
+    },
+    {
+        "id": "4",
+        "description": "Show or hide Utilities",
+        "category": "Views",
+        "keys": ["⌥", "⌘", "0"]
+    },
+    {
+        "id": "5",
+        "description": "Run the current scheme",
+        "category": "Run and build",
+        "keys": ["⌘", "R"]
+    },
+    {
+        "id": "6",
+        "description": "Build the current scheme",
+        "category": "Run and build",
+        "keys": ["⌘", "B"]
+    },
+    {
+        "id": "7",
+        "description": "Stop the running scheme",
+        "category": "Run and build",
+        "keys": ["⌘", "."]
+    },
+    {
+        "id": "8",
+        "description": "Toggle Breakpoints",
+        "category": "Debug",
+        "keys": ["⌘", "Y"]
+    },
+    {
+        "id": "9",
+        "description": "Step Over",
+        "category": "Debug",
+        "keys": ["F6"]
+    },
+    {
+        "id": "10",
+        "description": "Step Into",
+        "category": "Debug",
+        "keys": ["F7"]
+    },
+    {
+        "id": "11",
+        "description": "Step Out",
+        "category": "Debug",
+        "keys": ["F8"]
+    },
+    {
+        "id": "12",
+        "description": "Show Standard Editor",
+        "category": "Views",
+        "keys": ["⌘", "↩︎"]
+    },
+    {
+        "id": "14",
+        "description": "Open Quickly",
+        "category": "Navigation",
+        "keys": ["⌘", "⇧", "O"]
+    },
+    {
+        "id": "15",
+        "description": "Rename in Workspace",
+        "category": "Editing",
+        "keys": ["⌃", "⌘", "E"]
+    },
+    {
+        "id": "16",
+        "description": "Activate the Console",
+        "category": "Views",
+        "keys": ["⇧", "⌘", "C"]
+    },
+    {
+        "id": "17",
+        "description": "Show Document Items",
+        "category": "Navigation",
+        "keys": ["⌃", "6"]
+    },
+    {
+        "id": "18",
+        "description": "Go to Line",
+        "category": "Navigation",
+        "keys": ["⌘", "L"]
+    },
+    {
+        "id": "19",
+        "description": "Comment or Uncomment Line",
+        "category": "Editing",
+        "keys": ["⌘", "/"]
+    },
+    {
+        "id": "20",
+        "description": "Show Assistant Editor",
+        "category": "Views",
+        "keys": ["⌥", "⌘", "↩︎"]
+    },
+    {
+        "id": "21",
+        "description": "Hide or Show Debug Area",
+        "category": "Views",
+        "keys": ["⇧", "⌘", "Y"]
+    },
+    {
+        "id": "22",
+        "description": "Create New File",
+        "category": "General",
+        "keys": ["⌘", "N"]
+    },
+    {
+        "id": "23",
+        "description": "Show Version Editor",
+        "category": "Views",
+        "keys": ["⌥", "⌘", "↩︎"]
+    },
+    {
+        "id": "24",
+        "description": "Quick Help for Selected Symbol",
+        "category": "General",
+        "keys": ["⌃", "⌘", "?"]
+    },
+    {
+        "id": "25",
+        "description": "Show or Hide Toolbar",
+        "category": "Views",
+        "keys": ["⌥", "⌘", "T"]
+    },
+    {
+        "id": "26",
+        "description": "Show or Hide Navigator",
+        "category": "Views",
+        "keys": ["⌘", "J"]
+    },
+    {
+        "id": "27",
+        "description": "Format Selected Code",
+        "category": "Editing",
+        "keys": ["⌃", "I"]
+    },
+    {
+        "id": "28",
+        "description": "Fold/Unfold Current Block",
+        "category": "Editing",
+        "keys": ["⌥", "⌘", "←", "→"]
+    },
+    {
+        "id": "29",
+        "description": "Move to Next Editor",
+        "category": "Views",
+        "keys": ["⌃", "`"]
+    },
+    {
+        "id": "30",
+        "description": "Find Next",
+        "category": "Editing",
+        "keys": ["⌘", "G"]
+    },
+    {
+        "id": "31",
+        "description": "Run tests",
+        "category": "Testing",
+        "keys": ["⌘", "U"]
+    },
+    {
+        "id": "32",
+        "description": "Run all tests in the current file",
+        "category": "Testing",
+        "keys": ["⌃", "⌥", "⌘", "U"]
+    },
+    {
+        "id": "33",
+        "description": "Run the last test again",
+        "category": "Testing",
+        "keys": ["⌃", "⌥", "⌘", "G"]
+    },
+    {
+        "id": "34",
+        "description": "Show the Test navigator",
+        "category": "Testing",
+        "keys": ["⌘", "6"]
+    },
+    {
+        "id": "35",
+        "description": "Toggle code coverage",
+        "category": "Testing",
+        "keys": ["⌘", "⇧", "⌃", "C"]
+    }
+]

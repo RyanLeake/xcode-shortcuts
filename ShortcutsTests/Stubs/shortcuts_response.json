@@ -1,8 +1,0 @@
-[
-    {
-        "id": "1",
-        "description": "Jump to another editor",
-        "category": "Navigation",
-        "keys": ["⌘", "J"]
-    }
-]

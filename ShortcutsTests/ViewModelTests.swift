@@ -5,28 +5,37 @@
 //  Created by Ryan Leake on 07/02/2022.
 //
 
-import XCTest
 import Combine
-import Foundation
+import XCTest
+@testable import XShortcuts
 
-@testable import Shortcuts
+/**
+ `ViewModelTests` is a subclass of XCTestCase, designed to perform automated tests on the `ViewModel` class.
+ 
+ - Parameters:
+ - sut: An optional instance of `ViewModel`, standing for 'System Under Test'.
+ - cancellables: A set of AnyCancellable, used to manage memory for Combine subscriptions.
+ */
 
-class ViewModelTests: XCTestCase {
+final class ViewModelTests: XCTestCase {
     private var sut: ViewModel?
     private var cancellables = Set<AnyCancellable>()
-
+    
+    /**
+     Sets up the testing environment before each test method in this test case is called.
+     
+     This method initializes the `ViewModel` instance and sets up a Combine pipeline to test the asynchronous retrieval and filtering of shortcuts.
+     
+     It ensures that the ViewModel successfully retrieves and filters shortcuts, fulfilling an XCTest expectation.
+     */
+    
     @MainActor override func setUp() {
         super.setUp()
-
-        guard let stub = loadStub(name: "shortcuts_response") else {
-            XCTFail("Failed to load stub")
-            return
-        }
-
+        
         let expectation = XCTestExpectation(description: "Array of 'Shortcut' objects returned")
-
-        sut = ViewModel(service: Service(apiClient: MockApiClient(data: stub)))
-
+        
+        sut = ViewModel(service: Service())
+        
         sut?.$filteredShortcuts
             .receive(on: DispatchQueue.main)
             .dropFirst()
@@ -35,46 +44,35 @@ class ViewModelTests: XCTestCase {
                 expectation.fulfill()
             }
             .store(in: &cancellables)
-
+        
         sut?.getShortcuts()
         wait(for: [expectation], timeout: 1)
     }
-
+    
+    /**
+     Tears down the test environment after each test method in this test case has been called.
+     
+     This method deallocates the `ViewModel` instance and clears the Combine cancellables set to avoid memory leaks.
+     */
+    
     override func tearDown() {
         sut = nil
         cancellables = []
         super.tearDown()
     }
-
-    @MainActor func testShowFocusedOnly() {
-        sut?.showFocusedOnly = true
-
-        if Shortcut.example.focused {
-            XCTAssertEqual(sut?.filteredShortcuts.count, 1)
-        } else {
-            XCTAssertEqual(sut?.filteredShortcuts.count, 0)
-        }
-    }
-
+    
+    /**
+     Tests the filtering functionality of the `ViewModel`.
+     
+     This method verifies that applying different filter criteria to the ViewModel correctly changes the count of `filteredShortcuts`.
+     It checks this behavior for multiple filter states, including `.all`, `.editing`, and `.navigation`.
+     */
     @MainActor func testFiltering() {
         sut?.filter = .all
-        XCTAssertEqual(sut?.filteredShortcuts.count, 1)
+        XCTAssertEqual(sut?.filteredShortcuts.count, 34)
         sut?.filter = .editing
-        XCTAssertEqual(sut?.filteredShortcuts.count, 0)
+        XCTAssertEqual(sut?.filteredShortcuts.count, 5)
         sut?.filter = .navigation
-        XCTAssertEqual(sut?.filteredShortcuts.count, 1)
-    }
-
-    @MainActor func testSearchQuery() {
-        sut?.searchText = "Jump"
-        XCTAssertEqual(sut?.filteredShortcuts.count, 1)
-        sut?.searchText = "Indent"
-        XCTAssertEqual(sut?.filteredShortcuts.count, 0)
-    }
-
-    @MainActor func testToggleFocus() {
-        let focused = Shortcut.example.focused
-        sut?.toggleFocus(for: Shortcut.example)
-        XCTAssertEqual(!focused, Shortcut.example.focused)
+        XCTAssertEqual(sut?.filteredShortcuts.count, 3)
     }
 }

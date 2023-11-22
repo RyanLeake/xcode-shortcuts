@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+
+/**
+ `KeyView` is a SwiftUI view component designed to display a single key.
+
+ This view is primarily used for showing keyboard keys or similar elements in the UI, with customizable text and color.
+
+ - Parameters:
+    - key: A `String` representing the key value to be displayed.
+    - color: A `Color` for the text of the key. It defaults to `.text`.
+*/
+
 struct KeyView: View {
     typealias Constant = Constants.Key
 
